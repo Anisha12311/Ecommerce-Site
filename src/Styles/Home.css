@@ -1,0 +1,25 @@
+.box{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+}
+.heading{
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+h2{
+    justify-content: center;
+    display : flex;
+}
+span{
+    justify-content: center;
+    display : flex;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left : 85px;
+}
