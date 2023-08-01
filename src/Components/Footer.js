@@ -5,7 +5,7 @@ const Footer = () => {
   
   return (
    
-     <Box sx ={{position : 'absolute', width: '100%' ,pt:'15px',pb:'15px',fontSize:'18px',textAlign : 'center',color : 'white',background : '#1976d2' }}>
+     <Box sx ={{position : 'fixed', bottom : 0, width: '100%' ,pt:'15px',pb:'15px',fontSize:'18px',textAlign : 'center',color : 'white',background : '#1976d2' }}>
       
        Copyright &copy; Best online seller
        

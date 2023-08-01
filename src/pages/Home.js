@@ -11,7 +11,7 @@ import Register from './Register';
 const Home = () => {
 
   const catories = [
-    'books','laptop','phone','test'
+    'Books','Laptop','Phone','Watch'
   ]
 
 
@@ -30,7 +30,7 @@ const Home = () => {
           textAlign : "center",
         width: 400,
         height: 500,
-        backgroundColor: 'white',mr : 15,mt :5,boxShadow:'5px 5px 15px 5px rgba(0,0,0,0.3)',}}>
+        backgroundColor: 'white',mr : 15,mt :5,boxShadow:'0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',}}>
            <Register/>
         </Box>
       </div>
@@ -40,11 +40,11 @@ const Home = () => {
           <span>My vision is to build an e-commerce ecosystem that allows consumers and businesses to do all aspects of business online</span>
           </div>
 
-          <div className = 'container'>
-          <Grid container >
-      {catories.map((category) => (
-        <Grid item xs={4} key={category.id} style = {{marginBottom:'45px'}} >
-          <CataoryCard data={category} />
+          <div className = 'container' >
+          <Grid container spacing={{ xs: 3, md: 12 }} columns={{ xs: 1, sm: 2, md: 3 }} style = {{justifyContent:'center',alignItems:'center'}}>
+      {catories.map((category,id) => (
+        <Grid item key={category.id} >
+          <CataoryCard category={category} id = {id} />
         </Grid>
       ))}
       

@@ -45,9 +45,9 @@ const App = () => {
           
           <Route element = {<ProtectedRoute admin = {false}/>}>
           <Route path = "/user"  element = {<UserProfile/>}/>
-          <Route path = "/user/my-orders"  element = {<UserOrderDetails/>}/>
+          <Route path = "/user/my-orders"  element = {<UserOrders/>}/>
           <Route path = "/user/cart"  element = {<UserCartDetails/>}/>
-          <Route path = "/user/order-details"  element = {<UserOrders/>}/>
+          <Route path = "/user/order-details"  element = {<UserOrderDetails/>}/>
           </Route>
           
           <Route element = {<ProtectedRoute admin = {true}/>}>
